@@ -1,0 +1,20 @@
+@import 'bulma/css/bulma.css';
+
+body {
+  //background: #000;
+}
+
+.site-header {
+  background: pink;
+  color: red;
+}
+
+
+#hero {
+  //height: 100vh;
+  background: linear-gradient(180deg, rgba(0,0,0,0.4), rgba(0,0,0,0.7)), center / cover no-repeat url("https://images.drive.com.au/driveau/image/upload/c_fill,f_auto,g_auto,h_886,q_auto:good,w_1400/cms/uploads/7R9bCQA6SoKzDKdpq00P");
+}
+
+.title-make, .title-model {
+  font-size: 6rem;
+}
