@@ -1,23 +1,24 @@
 import './App.css';
 
+// images & logos
+import siteLogo from "./s660.jpg";
+import hondaLogo from "./honda.jpg";
+
+// Components
+import Header from "./components/layout/Header/Header.js";
+import Card from "./components/ui/Card/Card.js";
+
 function App() {
   return (
     <div className="App">
-      <header className="site-header is-flex is-justify-content-space-between p-3">
-         <span className="site-logo">boxing</span>
 
-          <ul className="is-flex">
-            <li>Link</li>
-            <li>LInk</li>
-            <li>Link</li>
-            <li>Link</li>        
-          </ul> 
-      </header>
 
-    <section className="hero is-large is-primary" id="hero">
-        <div class="hero-body">
-          <h1 class="title title-make is-bold">Honda</h1>
-          <h2 class="subtitle title-model">S660</h2>
+      <Header hondaLogo={hondaLogo} siteLogo={siteLogo} />
+
+      <section className="hero is-large is-primary" id="hero">
+        <div className="hero-body">
+          <h1 className="title title-make has-text-weight-bold">Honda</h1>
+          <h2 className="subtitle title-model">S660</h2>
           <div>
             <button className="button m-2">Watch Film</button>
             <button className="button m-2">See Trims</button>
@@ -42,15 +43,13 @@ function App() {
           </div>
 
           <span>Stay up to date!</span>
-          <form>
-            <input placeholder="email" />
-            <button>Sign up</button>
+          <form className="is-flex is-align-items-center">
+            <input className="input" placeholder="email" />
+            <button className="button m-2">Sign up</button>
           </form>
-
-
-              
+    
         </div>
-    </section>
+      </section>
 
 
     <section className="p-3 has-text-dark is-flex is-align-items-center is-justify-content-space-evenly" id="engine-specs">
@@ -71,34 +70,108 @@ function App() {
       </div>
 
       <div>
-        <button className="Button">Order Now</button>
+        <button className="button">Order Now</button>
       </div>      
     </section>
 
 
-    <section className=" is-flex is-align-items-center is-justify-content-space-evenly">
-      <div>
-        <img src="https://placehold.co/600x400" />
-        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-        <p>Morbi sit amet maximus justo, sit amet condimentum felis. Aliquam sit amet iaculis lacus. Fusce at hendrerit ante, fermentum pretium augue. Nunc sodales viverra lorem eget volutpat. In aliquam massa quis ex volutpat, eu eleifend tellus placerat.</p>
-      </div>
+    <section className="p-5 is-flex is-align-content-center is-justify-content-space-evenly">
 
-       <div>
-        <img src="https://placehold.co/600x400" />
-        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-        <p>Morbi sit amet maximus justo, sit amet condimentum felis. Aliquam sit amet iaculis lacus. Fusce at hendrerit ante, fermentum pretium augue. Nunc sodales viverra lorem eget volutpat. In aliquam massa quis ex volutpat, eu eleifend tellus placerat.</p>
-      </div>
+      <Card />
 
+      <Card />
 
-       <div>
-        <img src="https://placehold.co/600x400" />
-        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-        <p>Morbi sit amet maximus justo, sit amet condimentum felis. Aliquam sit amet iaculis lacus. Fusce at hendrerit ante, fermentum pretium augue. Nunc sodales viverra lorem eget volutpat. In aliquam massa quis ex volutpat, eu eleifend tellus placerat.</p>
-      </div>
-
+      <Card />    
   
     </section>
     
+
+    <section className="m-5 is-flex is-align-items-center is-justify-content-center" style={{height: "400px"}}>
+
+    <div className="is-flex is-align-content-center is-justify-content-space-evenly" style={{height: "100%", width: "100%"}}>
+      <div>
+        <h3 className="title has-text-weight-bold">All-New</h3>
+        <h4 className="title has-text-weight-bold">Honda S660</h4>
+      </div>
+      
+      <img className="is-align-self-center" style={{maxHeight: "100%", maxWidth: "100%"}} src="https://www.carscoops.com/wp-content/uploads/2018/05/Honda-S660-Modulo-X-32-1024x358.png" alt="660" />
+    </div>
+
+    </section>
+
+
+    <article className="four-corners">
+
+      <div> 
+        <span>Mobility</span>
+        <div>
+          <p>Honda is in the business of moving you in every sense of the word. We create intelligent technologies that enrich lives and make the world more fun to move around in — on the road, on the water, in the air and beyond. Our driving inspiration will always be to enhance the joy and freedom of mobility for all.</p>
+          <button className="button">Learn More</button>
+        </div>
+      </div>
+
+      <div> 
+        <span>Mobility</span>
+        <div>
+          <p>Honda is in the business of moving you in every sense of the word. We create intelligent technologies that enrich lives and make the world more fun to move around in — on the road, on the water, in the air and beyond. Our driving inspiration will always be to enhance the joy and freedom of mobility for all.</p>
+          <button className="button">Learn More</button>
+        </div>
+      </div>
+    
+      <div> 
+        <span>Mobility</span>
+        <div>
+          <p>Honda is in the business of moving you in every sense of the word. We create intelligent technologies that enrich lives and make the world more fun to move around in — on the road, on the water, in the air and beyond. Our driving inspiration will always be to enhance the joy and freedom of mobility for all.</p>
+          <button className="button">Learn More</button>
+        </div>
+      </div>
+
+
+      <div> 
+        <span>Mobility</span>
+        <div>
+          <p>Honda is in the business of moving you in every sense of the word. We create intelligent technologies that enrich lives and make the world more fun to move around in — on the road, on the water, in the air and beyond. Our driving inspiration will always be to enhance the joy and freedom of mobility for all.</p>
+          <button className="button">Learn More</button>
+        </div>
+      </div>
+
+    
+    </article>
+    
+
+    <section id="contact-sales">
+
+      <div className="is-flex is-align-items-center is-flex-direction-column p-4">
+        <h4 className="title">Get In Touch</h4>
+        <p className="subtitle">Contact our Sales Departmet</p>
+
+        <ul style={{width: "100%"}}>
+          <li className="has-text-weight-bold is-justify-content-space-between" style={{display: "inline-flex", width: "100%"}}>Monday <span>9:00AM-7:00PM</span></li>
+        </ul>
+
+        <button class="button">Contact</button>
+      </div>
+
+      <img src="https://www.carbodydesign.com/media/2013/10/Honda-S660-Concept-Interior-Design-Sketch-01.jpg" alt="S660 Interior" />
+      
+    </section>
+
+
+
+    <footer>
+        <div>
+
+    <span>&copy; 2023 creativeLabs.</span>
+
+  </div>
+
+  <div>
+
+    <span>Powered by</span>
+
+  </div>
+    </footer>
+  
     
     </div>
   );

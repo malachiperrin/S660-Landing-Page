@@ -5,8 +5,8 @@ body {
 }
 
 .site-header {
-  background: pink;
-  color: red;
+  background: #000;
+  color: #fff;
 }
 
 
@@ -17,4 +17,32 @@ body {
 
 .title-make, .title-model {
   font-size: 6rem;
+}
+
+
+.test-image {
+  align-self: center;
+  max-width: 80% !important;
+}
+
+.four-corners {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 20rem;
+  place-items: center;
+  margin: 1.6rem 0 2.8rem  0;
+}
+
+.four-corners div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: .8rem;
+}
+
+#contact-sales {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-row: auto;
 }
