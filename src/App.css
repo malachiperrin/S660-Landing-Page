@@ -9,6 +9,11 @@ body {
   color: #fff;
 }
 
+.site-logo {
+  height: 50px;
+  width: 50px;
+}
+
 
 #hero {
   //height: 100vh;
@@ -45,4 +50,16 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-row: auto;
+}
+
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #000;
+  color: #fff;
+  padding: 1.8rem;
+  margin: 1.2rem 0 0 0;
 }

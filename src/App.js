@@ -8,6 +8,13 @@ import hondaLogo from "./honda.jpg";
 import Header from "./components/layout/Header/Header.js";
 import Card from "./components/ui/Card/Card.js";
 
+
+// Images 
+import fuelGaugeImage from "./fuelgauge.png";
+import zeroTo60Image from "./0to60.png";
+import rearDriveImage from "./reardrive.jpg";
+
+
 function App() {
   return (
     <div className="App">
@@ -27,18 +34,18 @@ function App() {
 
         <div className="p-2 car-details is-flex is-align-items-center is-justify-content-space-evenly">
 
-          <div>
-            <span className="is-flex flex-direction-column is-align-items-center">Car Manufactuer</span>
+          <div className="is-flex is-flex-direction-column is-align-items-center is-justify-content-center">
+            <span>Car Manufactuer</span>
             <span>HONDA</span>
           </div>
 
-           <div>
-            <span className="is-flex flex-direction-column is-align-items-center">Car Production</span>
+           <div  className="is-flex is-flex-direction-column is-align-items-center is-justify-content-center">
+            <span>Car Production</span>
             <span>2016 - Present</span>
           </div>
 
-           <div>
-            <span className="is-flex flex-direction-column is-align-items-center">Engine</span>
+           <div  className="is-flex is-flex-direction-column is-align-items-center is-justify-content-center">
+            <span>Engine</span>
             <span>1.6 Liter V-TEC</span>
           </div>
 
@@ -53,18 +60,21 @@ function App() {
 
 
     <section className="p-3 has-text-dark is-flex is-align-items-center is-justify-content-space-evenly" id="engine-specs">
-      <div>
+      <div  className="is-flex is-flex-direction-column is-align-items-center is-justify-content-center">
+		<img className="image is-64x64" src={ zeroTo60Image } alt="0 to 60 gauge" />
         <span>3.1 S</span>
         <p>0 - 60 MPH</p>
       </div>
 
-      <div>
+      <div  className="is-flex is-flex-direction-column is-align-items-center is-justify-content-center">
+		<img className="image is-64x64" src={ fuelGaugeImage } alt="Fuel gauge" /> 
         <span>4 Cyl</span>
         <p>26 miles per gallon</p>
       </div>
 
 
-       <div>
+       <div  className="is-flex is-flex-direction-column is-align-items-center is-justify-content-center">
+		<img className="image is-64x64" src={ rearDriveImage }  alt="rear drive icon" />
         <span>AWD</span>
         <p>Dual Motor</p>
       </div>
@@ -92,6 +102,10 @@ function App() {
       <div>
         <h3 className="title has-text-weight-bold">All-New</h3>
         <h4 className="title has-text-weight-bold">Honda S660</h4>
+		
+		<p>
+			Honda is in the business of moving you in every sense of the word. We create intelligent technologies that enrich lives and make the world more fun to move around in — on the road, on the water, in the air and beyond. Our driving inspiration will always be to enhance the joy and freedom of mobility for all.
+		</p>
       </div>
       
       <img className="is-align-self-center" style={{maxHeight: "100%", maxWidth: "100%"}} src="https://www.carscoops.com/wp-content/uploads/2018/05/Honda-S660-Modulo-X-32-1024x358.png" alt="660" />
@@ -149,7 +163,7 @@ function App() {
           <li className="has-text-weight-bold is-justify-content-space-between" style={{display: "inline-flex", width: "100%"}}>Monday <span>9:00AM-7:00PM</span></li>
         </ul>
 
-        <button class="button">Contact</button>
+        <button className="button">Contact</button>
       </div>
 
       <img src="https://www.carbodydesign.com/media/2013/10/Honda-S660-Concept-Interior-Design-Sketch-01.jpg" alt="S660 Interior" />
@@ -158,18 +172,16 @@ function App() {
 
 
 
+    
     <footer>
-        <div>
+       <div>
+          <span>Honda S660 Landing Page</span>
+      </div>
 
-    <span>&copy; 2023 creativeLabs.</span>
-
-  </div>
-
-  <div>
-
-    <span>Powered by</span>
-
-  </div>
+      <div>
+        <span>Powered by the Dreams of Honda</span>
+     </div>
+    
     </footer>
   
     
