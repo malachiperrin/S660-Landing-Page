@@ -13,7 +13,7 @@ import Card from "./components/ui/Card/Card.js";
 import fuelGaugeImage from "./fuelgauge.png";
 import zeroTo60Image from "./0to60.png";
 import rearDriveImage from "./reardrive.jpg";
-
+import greens660 from "./greens660.jpg";
 
 function App() {
   return (
@@ -52,7 +52,7 @@ function App() {
           <span>Stay up to date!</span>
           <form className="is-flex is-align-items-center">
             <input className="input" placeholder="email" />
-            <button className="button m-2">Sign up</button>
+            <button className="button is-info m-2">Sign up</button>
           </form>
     
         </div>
@@ -80,7 +80,7 @@ function App() {
       </div>
 
       <div>
-        <button className="button">Order Now</button>
+        <button className="button is-info">Order Now</button>
       </div>      
     </section>
 
@@ -116,15 +116,15 @@ function App() {
 
     <article className="four-corners">
 
-      <div> 
-        <span>Mobility</span>
+      <div  className="has-text-light" style={{"background": `linear-gradient(180deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), center / cover no-repeat url(${greens660})` }}>
+        <span className="m-1" style={{"fontSize": "36px"}}>Mobility</span>
         <div>
           <p>Honda is in the business of moving you in every sense of the word. We create intelligent technologies that enrich lives and make the world more fun to move around in — on the road, on the water, in the air and beyond. Our driving inspiration will always be to enhance the joy and freedom of mobility for all.</p>
           <button className="button">Learn More</button>
         </div>
       </div>
 
-      <div> 
+      <div className="has-text-light" style={{"background": `linear-gradient(180deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), center / cover no-repeat url(${greens660})` }}> 
         <span>Mobility</span>
         <div>
           <p>Honda is in the business of moving you in every sense of the word. We create intelligent technologies that enrich lives and make the world more fun to move around in — on the road, on the water, in the air and beyond. Our driving inspiration will always be to enhance the joy and freedom of mobility for all.</p>
@@ -132,7 +132,7 @@ function App() {
         </div>
       </div>
     
-      <div> 
+      <div className="has-text-light" style={{"background": `linear-gradient(180deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), center / cover no-repeat url(${greens660})` }}>
         <span>Mobility</span>
         <div>
           <p>Honda is in the business of moving you in every sense of the word. We create intelligent technologies that enrich lives and make the world more fun to move around in — on the road, on the water, in the air and beyond. Our driving inspiration will always be to enhance the joy and freedom of mobility for all.</p>
@@ -141,7 +141,7 @@ function App() {
       </div>
 
 
-      <div> 
+      <div className="has-text-light" style={{"background": `linear-gradient(180deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), center / cover no-repeat url(${greens660})` }}>
         <span>Mobility</span>
         <div>
           <p>Honda is in the business of moving you in every sense of the word. We create intelligent technologies that enrich lives and make the world more fun to move around in — on the road, on the water, in the air and beyond. Our driving inspiration will always be to enhance the joy and freedom of mobility for all.</p>
