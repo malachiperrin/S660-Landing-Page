@@ -8,7 +8,7 @@ import hondaLogo from "./honda.jpg";
 import Header from "./components/layout/Header/Header.js";
 import Footer from "./components/layout/Footer/Footer.js";
 import Card from "./components/ui/Card/Card.js";
-
+import BusinessHoursContainer from "./components/ui/BusinessHours/BusinessHoursContainer/BusinessHoursContainer.js";
 
 // Images 
 import fuelGaugeImage from "./fuelgauge.png";
@@ -88,11 +88,11 @@ function App() {
 
     <section className="p-5 is-flex is-align-content-center is-justify-content-space-evenly">
 
-      <Card />
+      <Card cardImage={greens660} />
 
-      <Card />
+      <Card cardImage={greens660} />
 
-      <Card />    
+      <Card cardImage={greens660} />    
   
     </section>
     
@@ -155,17 +155,8 @@ function App() {
     
 
     <section id="contact-sales">
-
-      <div className="is-flex is-align-items-center is-flex-direction-column p-4">
-        <h4 className="title">Get In Touch</h4>
-        <p className="subtitle">Contact our Sales Departmet</p>
-
-        <ul style={{width: "100%"}}>
-          <li className="has-text-weight-bold is-justify-content-space-between" style={{display: "inline-flex", width: "100%"}}>Monday <span>9:00AM-7:00PM</span></li>
-        </ul>
-
-        <button className="button">Contact</button>
-      </div>
+      
+      <BusinessHoursContainer />
 
       <img src="https://www.carbodydesign.com/media/2013/10/Honda-S660-Concept-Interior-Design-Sketch-01.jpg" alt="S660 Interior" />
       
