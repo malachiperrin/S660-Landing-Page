@@ -6,6 +6,7 @@ import hondaLogo from "./honda.jpg";
 
 // Components
 import Header from "./components/layout/Header/Header.js";
+import Footer from "./components/layout/Footer/Footer.js";
 import Card from "./components/ui/Card/Card.js";
 
 
@@ -173,16 +174,7 @@ function App() {
 
 
     
-    <footer>
-       <div>
-          <span>Honda S660 Landing Page</span>
-      </div>
-
-      <div>
-        <span>Powered by the Dreams of Honda</span>
-     </div>
-    
-    </footer>
+    <Footer />
   
     
     </div>
